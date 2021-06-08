@@ -1,0 +1,107 @@
+Primera Sección:
+-Variables y tipos de datos
+-Comentarios en el codigo
+-Operadores Matematicos
+-Operadores Logicos
+-Operadores Unarios
+
+Segunda Sección:
+-Sentencia IF else...
+-IF Anidados
+-Sentencia Switch
+-Estructura for
+-Estructuras While y Do While
+
+
+
+
+-Introducción de Funciones y Arreglos:
+-¿Que es una funcion?: Un conjunto de instrucciones que realiza una tarea o calcula un valor, recibe una entrada y devuelve una salida
+-Argumentos de una funcion:
+*El nombre de la función.
+
+-Funciones recursivas:
+-Son aquellas que se invocan a si mismo en momento de su ejecución. 
+-En análisis de Algoritmos las técnicas recursivas se usan mucho para la solución de Problemas. 
+
+-Funciones Predefinas:
+-¿Que es un Arreglo?:Un arreglo(vector, array, matriz) es un conjunto de datos o una estructura de datos que recibe cantidad de 'palabras' y/o 'numeros'
+-Funciones Basicas con Arreglos:Los arrays son objetos similares a una lista que proporciona métodos para efectuar operaciones de recorrido.
+Tanto la longitud como el tipo de los elementos de un array son variables.
+
+-¿Cuales son las funciones basicas en Arreglos?
+
+-push: Se le agrega un array en la ultima parte.
+-unshift: Inserta los valores proporcionados al inicio de un objeto del tipo array
+-pop:  Elimina el último elemento de un array y devuelve su valor al método que lo llamó.
+-shift: Elimina el elemento en el índice cero  
+-indexOf: Devuelve el índice
+ 
+¿Que es el Dom en JavaScript?
+En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, 
+que podemos modificar de forma dinámica desde Javascript, 
+añadiendo nuevas etiquetas, modificando o eliminando otras, 
+cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc...
+
+¿Que es el Dom en html5?
+-Define la estructura lógica de los documentos y el modo en que se accede y manipula
+
+(    <!-- <h1>Argumentos de Funciones</h1>
+    <h4>Funciones de Sumar, Funciones de Restar, Funciones de Multiplicar, Funciones de Dividir</h4>
+    <h1>Funciones Recursivas</h1>
+    <h4>Funciones Factoriales</h4>
+    <h1>Funciones Basicas con arreglos</h1> -->
+
+    <h1> HTML5 - Conceptos basicos </h1>
+    
+    <table border="1px">
+        <tr>
+        <td>Columna 1</td>
+        <td>Columna 2</td>
+        <td>Columna 3</td>
+    </tr>
+    <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+    </tr>
+    </table>
+    <img class='imagen' src="https://i2.wp.com/thehappening.com/wp-content/uploads/2015/08/king-cavalier-2.jpg?fit=1024%2C694&ssl=1" alt="Perrito 1" width="300px" height="200px">
+    <img class='imagen' src="https://i.pinimg.com/originals/f8/7a/dc/f87adc42dcadc2f97dcc53cc762eac31.jpg" alt="Perrito 2" width="200px" height="200px">
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+     </ul>
+ 
+    <ol>
+       <li>Elemento 1</li>
+       <li>Elemento 2</li>
+       <li>Elemento 3</li>
+    </ol>
+
+    <form action="">
+        <input type="text" name="" id="">
+        <button id="botón">Aceptar</button>
+    </form>
+
+    <script src="dom.js"></script>)
+
+
+¿Para que sirven estas funciones?
+
+-//getElementsByName:que seleccionaría todos los elementos basándose en el atributo name
+-//getElementById:permite como su nombre indica seleccionar un elemento del documento por medio del valor del atributo id que se le haya asignado
+-//forEach:sirve para moverse por los elementos de una estructra de datos como podría ser un vector y realizar acciones para cada una de los elementos
+-//innerText:Siempre devuelven el mismo valor para el mismo elemento, pero cuando los establece, la propiedad innerText reemplaza el contenido entre las etiquetas de apertura y cierre de un elemento con el texto especificado
+-//forEach:sirve para moverse por los elementos de una estructra de datos como podría ser un vector y realizar acciones para cada una de los elementos
+-/*padding:tener los elementos pegados*/
+-/*background;Fondo para todo el body*/
+-/*calculadora:para que cada elemento de la calculadora tenga todos estos estilos*/
+-/*botones y calculadora:los estilos son para los botones*/
+-/*output:para la pantalla de salida*/
+-/*output:para la pantalla de salida*/
+-/*calculadora y boton hover:para que pase el mouse y se visualice mejor*/
+-/*texto alineado: center (para que los textos aparezcan al centro de la pagina)*/
+-/*toString: es una funcion que se le aplican a las cadenas de texto en JavaScript en forma de texto*/
+-/*actualizarDisplay: lo unico que hara es actualizar el resultado.*/ 
