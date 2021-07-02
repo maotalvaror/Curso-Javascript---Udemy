@@ -1,0 +1,1 @@
+//Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas
