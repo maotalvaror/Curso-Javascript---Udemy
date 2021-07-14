@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Examen YRRB</title>
+  <style type="text/css">
+    .ocultar {
+      display: none;
+    }
+
+    .mostrar {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  
+  <p id="lblMensaje" show="true" class="mostrar">Mensaje</p>
+  
+  <button id="btnOcultar" name="Mensaje2">Ocultar Mensaje</button>
+
+
+  <script type="text/javascript">
+    var mensaje = document.getElementById("lblMensaje");
+    var btn = document.getElementById("btnOcultar");
+    
+    var toggle = function () {
+      var show = mensaje.getAttribute("show");
+
+      if (show == "true") {
+        mensaje.style.display = "none";
+        mensaje.setAttribute("show", "false");
+      } else {
+        mensaje.style.display = "block";
+        mensaje.setAttribute("show", "true");
+      }
+    
+    }
+    var toggle2 = function () {
+    
+      var show = mensaje.classList.contains("mostrar");
+
+      if(show){
+        mensaje.classList.add("ocultar");
+        //mensaje.setAttribute("show", "false"); 
+        mensaje.classList.remove("mostrar");    
+     } else {
+        mensaje.classList.add("mostrar");
+        //mensaje.setAttribute("show", "true");
+        mensaje.classList.remove("ocultar");
+      }
+    }
+    btn.onclick = toggle2;
+ 
+    
+  </script>
+</body>
+</html>
