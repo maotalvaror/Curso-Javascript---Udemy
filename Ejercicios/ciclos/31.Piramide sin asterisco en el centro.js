@@ -6,9 +6,9 @@ function llamarFuncion(numeroRecibido) {
 
   for (let i = 1; i <= numeroRecibido; i++) {
     for (let j = 0; j < VecesIteracion; j++) {
-      if (j == 0 || j == (VecesIteracion-1) || (i == 1 || (i == numeroRecibido))) {
+     if (esPrimerElemento(j) || esUltimoElemento(j, (VecesIteracion-1)) || (esPrimerElemento(i, 1) || (esUltimoElemento(i, numeroRecibido))) ) {
         concatenar += '*';
-      } else {
+     } else {
         concatenar += ' ';
       }
     }
@@ -22,4 +22,13 @@ function llamarFuncion(numeroRecibido) {
   }
 
   console.log(triangulo)
+}
+
+function esUltimoElemento(indice, cantidadElementos){
+  return indice == cantidadElementos;
+}
+
+function esPrimerElemento(indice, numero_inicio) {
+  numero_inicio = numero_inicio || 0;
+  return indice == numero_inicio;
 }
