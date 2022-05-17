@@ -1,0 +1,8 @@
+-¿Qué son las clases? 
+  Son una sintaxis mas clara y simple para crear objetos y trabajar con la herencia.
+-Las clases pueden ser:
+  nombradas o anonimas.
+-Para declarar una clase se utiliza : 
+  (class).
+-El metodo Constructor :
+  funciona para crear e inicializar un objeto creado con una clase
