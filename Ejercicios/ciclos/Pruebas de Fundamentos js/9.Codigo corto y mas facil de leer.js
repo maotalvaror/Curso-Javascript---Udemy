@@ -10,4 +10,6 @@ Funciona igual que el anterior programa,
 alert(`Segun if (Con llaves)`)
 var numero2 = prompt('Digite un numero de su preferencia');
 
-if (numero2 > 6 ) {alert(`El numero ${numero2} Es mayor a 6`);}
+if (numero2 > 6 ) {
+  alert(`El numero ${numero2} Es mayor a 6`);
+}

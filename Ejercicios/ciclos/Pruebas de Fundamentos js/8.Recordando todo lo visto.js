@@ -1,4 +1,4 @@
-//Estructura de Código = Punto y coma
+//Estructura de Código
 alert('Hola'); alert('Mundo');
 
 /*El Salto de linea tambien sirve para

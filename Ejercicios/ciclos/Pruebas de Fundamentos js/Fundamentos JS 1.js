@@ -105,7 +105,9 @@ Sin el Operador especial = (in)
 */
 alert('Prueba sin Operador in ')
 let PruebaObjetoNoExistente = {}
-let PruebaObjetoExistente = { Propiedad_Existente: "Existe esta propiedad"};
+let PruebaObjetoExistente = {
+   Propiedad_Existente: "Existe esta propiedad"
+  };
 
 console.log( PruebaObjetoNoExistente.PropiedadNoExistente === undefined ); // true significa que no existe
 console.log( PruebaObjetoExistente.Propiedad_Existente === undefined);  //  false por que esta propiedad si existe
@@ -181,13 +183,13 @@ console.log("propiedad" in pruebaObj) // true ya que si existe esta propiedad
 //Objeto de Datos usuario
 
 let user = {
-  name: "John",
-  age: 30,
+  nombre: "John",
+  edad: 30,
   isAdmin: true
 };
 
 for (var PropiedadesObtenidas in user) {
-  console.log( PropiedadesObtenidas );          // name, age, isAdmin
+  console.log( PropiedadesObtenidas );          // nombre, edad, isAdmin
   console.log( user[PropiedadesObtenidas] );    // John, 30, true
 }
 
