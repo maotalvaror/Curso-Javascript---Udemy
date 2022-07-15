@@ -1,0 +1,9 @@
+¿Qué es una promesa? =
+Una promesa representa un valor que puede estar disponible
+Una Promesa es un valor no necesariamente conocido en el momento que es creada la promesa
+
+¿Qué resive la promesa? =
+Una promesa pendiente puede ser cumplida con un valor, o rechazada con una razón 
+Dos parametros
+1.)Cumplida = significa que la operación se completó.
+2.)Rechazada = (rejected): significa que la operación falló.

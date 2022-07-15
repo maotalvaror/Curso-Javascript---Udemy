@@ -1,0 +1,31 @@
+¿Qué es un callback? =
+Es una función que se pasa a otra función como un argumento.
+
+¿Qué es una promesa?
+Una promesa representa un valor que puede estar disponible.
+Una Promesa es un valor no necesariamente conocido en el momento que es creada.
+¿Qué resive la promesa? =
+Una promesa pendiente puede ser cumplida con un valor, o rechazada por una razón.
+Dos parametros
+1.) resolve = significa que la operación funciono.
+2.) rejected = significa que la operación falló.
+
+¿Qué es el metodo then? =
+retorna una Promesa. 
+Recibe dos argumentos: Error y Callbacks.
+
+¿Qué es el metodo catch? =
+retorna una Promesa.
+Y solo se ejecuta en los casos en los que la promesa se marca como Reject (error).
+
+¿Qué es la función async? =
+Cuando se llama a una función async esta devuelve un elemento Promise.
+Cuando la función async devuelve un valor la promesa se resolverá con el valor devuelto.
+Si la función async genera una excepción o algún valor,
+Promesa se rechazará con el valor generado.
+
+¿Qué es await? =
+Es usado para esperar a una Promesa.
+Sólo puede ser usado dentro de una función async.
+await = 
+provoca que la ejecución de una función async sea pausada hasta que una Promise sea terminada o rechazada.
