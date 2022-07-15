@@ -1,0 +1,35 @@
+¿Qué son las clases? =
+Abstracción de algún objeto
+
+¿Qué son las propiedades en una clase? = 
+son caracteristicas que describen o que contienen las clases
+
+¿Qué son los metodos en una clase? =
+Son funciones que pueden y realizan las clases
+
+¿Como se declara? = 
+el nombre de la clase tiene que tener la letra capitalizada
+
+class Nombre{
+}
+
+¿Qué es el constructor en una clase? =
+El constructor  es el que permite hacer todas las inicializaciones de la clase al momento de ser usada
+
+¿Para qué esta el new en una clase? =
+Si no se declara con new se revienta el codigo
+
+  let nombrePersona = new Persona("Maria");
+  nombrePersona.decirNombre();
+
+¿Qué es el instanceof? =
+Verifica si un objeto contiene la propiedad de un constructor
+
+¿Qué son los metodos estaticos?
+son métodos que se pueden llamar sin inicializar una clase
+
+¿Qué son los metodos computados?
+son métodos cuyo nombre se puede definir a través de una variable
+
+¿Qué es la herencia en una clase? =
+Son las formas en las que los hijos pueden recibir  metodos y propiedades del padre

@@ -1,0 +1,23 @@
+class Rectangulo{
+  constructor(alto, largo){
+    this.alto = alto;
+    this.largo = largo;
+  }
+  getArea(){
+    return this.alto * this.largo;
+  }
+}
+
+class Cuadrado extends Rectangulo{
+  constructor(alto){
+    super(alto, alto);
+  }
+  getArea(){
+    return "Cuadrado: " + (this.alto * this.alto);
+  }
+}
+
+let rectangulo = new Rectangulo(2, 3);
+let cuadrado = new Cuadrado(4);
+
+console.log(cuadrado.getArea());
