@@ -1,0 +1,22 @@
+* MESES *
+January   == Enero = 0
+February  == Febrero = 1
+March     == Marzo = 2
+April     == Abril = 3
+May       == Mayo = 4
+June      == Junio = 5
+July      == Julio = 6
+August    == Agosto = 7
+September == Septiembre = 8
+October   == Octubre = 9
+November  == Noviembre = 10
+December  == Diciembre = 11
+
+* DIAS DE SEMANA *
+1 = Lunes = MONDAY
+2 = Martes = TUESDAY
+3 = Miercoles = WEDNESDAY
+4 = Jueves = THURSDAY
+5 = Viernes = FRIDAY
+6 = Sabado = SATURDAY
+7 = Domingo = SUNDAY
