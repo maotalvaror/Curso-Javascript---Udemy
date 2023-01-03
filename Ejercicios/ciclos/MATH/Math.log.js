@@ -10,5 +10,5 @@ DEVUELVE LA BASE NEUTRAL DE UN NUMERO
 */
 
 function BaseNeutral(x, y){
-  return Math.log(x) / Math.log(y);
+  return Math.log(y) / Math.log(x);
 }
