@@ -1,0 +1,75 @@
+---------------------------------------------------------------------------------------------------
+
+La fetch nos permite acceder a recursos de un servidor de manera asíncrona.
+Este tipo de peticiones nos permiten realizar solicitudes, sin necesidad de recargar toda la página.
+
+
+1. El primer "parametro" de fetch es la URL.
+2. El segundo "parametro" de fetch es el objeto JSON
+3. El tercer "parametro" de fetch es los datos como respuesta.
+Fetch solo arroja un error si la solicitud en si se interrumpe.
+
+---------------------------------------------------------------------------------------------------
+
+EJEMPLO DE FETCH:
+
+fetch('https://swapi.dev/api/people/?format=json')
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log('Solicitud fallida', err));
+
+---------------------------------------------------------------------------------------------------
+
+EJEMPLO CON HEADERS:
+Puedes pasar encabezados con la propiedad “headers”.
+Pasar un objeto JSON a la propiedad "headers" debería funcionar en la mayoría de los casos.
+
+fetch('https://api.github.com/users/manishmshiva', {
+  method: "GET",
+  headers: {"Content-type": "application/json;charset=UTF-8"}
+})
+  .then(res => res.json()) 
+  .then(json => console.log(json))
+  .catch(err => console.log(err));
+
+---------------------------------------------------------------------------------------------------
+
+EJEMPLO PASANDO DATOS A UNA SOLICITUD POST:
+Para una solicitud POST, puedes usar la propiedad “body” para pasar una cadena JSON como input.
+Date cuenta de que el "body" debe ser una cadena JSON, pero los encabezados (headers) deben ser un objecto JSON.
+
+
+let _datos = {
+  titulo: "foo",
+  principal: "bar", 
+  Id:1
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: "POST",
+  body: JSON.stringify(_datos),
+  headers: {"Content-type": "application/json; charset=UTF-8"}
+})
+.then(res => res.json()) 
+.then(json => console.log(json))
+.catch(err => console.log(err));
+
+---------------------------------------------------------------------------------------------------
+
+GET — Obtener datos de la API. Por ejemplo, obtener un usuario de Twitter en función de su nombre de usuario.
+POST — Empujar los datos a la API. Por ejemplo, crear un nuevo registro de usuario con nombre, edad y dirección de correo electrónico.
+PUT — Actualizar un registro existente con nuevos datos. Por ejemplo, actualizar la dirección de correo electrónico de un usuario.
+DELETE — Eliminar un registro. Por ejemplo, eliminar un usuario de la base de datos
+
+---------------------------------------------------------------------------------------------------
+
+TODA REST API TIENE TRES ELEMENTOS. LA SOLICITUD (REQUEST), LA RESPUESTA (RESPONSE), Y LOS ENCABEZADOS (HEADERS);
+
+REQUEST: ESTOS SON LOS DATOS QUE ENVIAS A LA API, COMO UNA IDENTIFICACIÓN DE PEDIDO ID PARA OBTENER LOS DETALLES DEL PEDIDO.
+
+RESPONSE: LOS DATOS QUE OBTENGAS DEL SERVIDOR DESPUES DE UNA SOLICITUD EXITOSA O FALLIDA.
+
+HEADERS: METADATOS ADICIONALES QUE SE MANDAN A LA API, PARA AYUDAR AL SERVIDOR A COMPRENDER QUE TIPO DE SOLICITUD SE ESTA MANDANDO.
+COMO POR EJEMPLO: content-type: (tipo de contenido);
+
+---------------------------------------------------------------------------------------------------
