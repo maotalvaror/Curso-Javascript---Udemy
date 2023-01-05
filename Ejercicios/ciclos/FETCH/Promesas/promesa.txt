@@ -1,0 +1,29 @@
+La promesa recibe una función y esta función recibe dos parametros
+
+1. Resolve = Si el trabajo finalizo con exito devolvera el valor obtenido en resolve
+2. Reject = Si en el trabajo ocurrio un error devolvera el valor obtenido en "Error"
+
+Para resumir = el ejecutor corre automaticamente e intenta realizar una tarea, Cuando termina
+en el intento llama a resolve, si fue exitoso o de lo contrario a reject, si hubo un error
+
+____________________________________________________________
+
+Los consumidores de una promesa son:
+
+1. then
+2. catch
+3. finally
+
+1. then = recibe dos argumentos ( promesa.then(alert); )
+  1.Argumento = Es una funcion que se ejecuta cuando se resuelve la promesa y recibe el resultado.
+  2.Argumento = Es una funcion que se ejecuta cuando se rechaza la promesa y recibe el error.
+
+2. catch = Solo se utiliza para los errores
+  1. Podemos utilizar null en el primer parametro en then y como segundo parametro el error
+  2. O de igual manera se puede utilizar promesa.catch(alert);
+
+3. finally = El operador finally no tiene argumentos, entonces no sabemos si la promesa es exitosa o no.
+    1. Un manejador finally no obtiene lo que resultó del manejador previo (no tiene argumentos).
+      Ese resultado es pasado a través de él al siguiente manejador.
+    2. Si el manejador de finally devuelve algo, será ignorado.
+    3. Cuando es finally el que dispara el error, la ejecución pasa al manejador de error más cercano.
