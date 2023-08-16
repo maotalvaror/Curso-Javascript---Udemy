@@ -1,0 +1,12 @@
+body {
+  background: rgb(219, 219, 219);
+  text-align: center;
+  line-height: 100vh;
+  margin: 0;
+}
+
+button {
+  vertical-align: middle;
+  width: 100px;
+  height: 400px;
+}
