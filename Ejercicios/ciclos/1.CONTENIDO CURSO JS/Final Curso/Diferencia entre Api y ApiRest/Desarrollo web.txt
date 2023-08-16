@@ -1,0 +1,23 @@
+Desarrollo web =
+
+=> Real Time + Notificaciones
+=> SPA -> Vue, Angular, React
+
+* Frontend
+  - HTML
+  - CSS
+  -JAVASCRIPT <- (JQuery).
+
+* Backend
+  - Lenguaje de programación
+
+* PHP, JAVA, PYTHON, RUBY, NodeJS
+RESPUESTA:
+  => HTML, assets (css, js, imgs).
+  => JSON, XML.
+
+* Gestor de bases de datos
+  =>MySQL, PostgreSQL, SQLite
+
+* NO RELACIONALES
+  =>MongoDB.
