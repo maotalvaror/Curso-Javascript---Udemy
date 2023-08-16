@@ -1,0 +1,25 @@
+VARIABLES
+
+myCanvas Y context : 
+Nos permiten obtener una referencia del elemento Canvas y acceder al contexto 2d del elemento Canvas.
+
+SIZE = 20 :
+Tamaño estandar que se va a usar para cada uno de los cuadros que conforman a la serpiente y el alimento.
+
+head :
+Contiene unas coordenadas que representan el lugar donde inicia la cabeza de la serpiente.
+
+body :
+Cuerpo de la serpiente en un arreglo.
+
+food :
+Va a guardar en algun momento un objeto con coordenadas (( x / y )).
+
+dx Y dy :
+Variación en X y la Variación en Y que determinan en que direccion se mueve la serpiente.
+
+lastAxis :
+Hacer seguimiento de cual fue la ultima direccion en la cual estuvo la serpiente con el fin de evitar que se mueva en la direccion opuesta.
+
+setInterval :
+Se encarga de ejecutar cada 150 milisegundos la funcion main.
