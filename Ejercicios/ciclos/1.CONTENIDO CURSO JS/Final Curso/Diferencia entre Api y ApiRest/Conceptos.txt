@@ -1,0 +1,21 @@
+* Apps Híbridas =
+  Permite adaptar la vista web a cualquier vista de un dispositivo móvil.
+  Es una forma de crear aplicaciones para que funcione en diferentes dispositivos,
+  y así no tener que crear una aplicación para cada uno de los sistemas operativos existentes.
+
+  * Ionic =
+    proporciona un conjunto de herramientas para crear aplicaciones nativas de iOS y Android,
+    así como aplicaciones web progresivas para dispositivos móviles,
+    usando bibliotecas web, marcos y lenguajes familiares.
+  
+  * ReactNative =
+    Es un framework JavaScript para crear aplicaciones reales nativas para iOS y Android,
+    basado en la librearía de JavaScript React para la creación de componentes visuales,
+    cambiando el propósito de los mismos para, en lugar de ser ejecutados en navegador,
+    correr directamente sobre las plataformas móviles nativas, en este caso iOS y Andorid.
+
+
+* WebService =
+  Sirven para intercambiar datos entre aplicaciones.
+  La principal ventaja de utilizar un servicio web es que son bastante prácticos,
+  debido a que son independientes de las aplicaciones.
