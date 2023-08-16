@@ -1,0 +1,31 @@
+JQuery = no es lo mismo que javascript, ya que JQuery es una Biblioteca y javascript es un lenguaje
+
+Biblioteca = 
+En javascript suele hacer referencia a un conjunto de funciones,
+este conjunto de funciones se agrupan en un unico archivo.
+
+((
+  CONJUNTO DE FUNCIONES QUE PUEDEN REUTILIZARSE IMPORTANDO UN ARCHIVO JS,
+  A TRAVÉS DE UNA ETIQUETA SCRIPT
+))
+
+
+Modulos =
+Nos permiten encapsular codigo fuente de una forma estandar,
+todo con la intencion de como importar y exportar modulos para trabajar mejor.
+
+((
+  CONJUNTO DE ELEMENTOS DE SOFTWARE QUE PUEDEN REUTILIZARSE,
+  RESPETANDO PRINCIPIOS DE MODULARIDAD,
+  PUEDEN UTILIZARSE SIGUIENDO EL ESTANDAR DE ES6.
+))
+
+
+Paquete =
+GESTOR DE PAQUETES DE JS Y DE NODE.JS ES = NPM
+
+((
+  AGRUPACION DE UNO O MAS MODULOS,
+  PAQUETES DEPENDEN DE OTROS,
+  SE PUEDEN DESCARGAR DE Y PUBLICAR EN NPM
+))
