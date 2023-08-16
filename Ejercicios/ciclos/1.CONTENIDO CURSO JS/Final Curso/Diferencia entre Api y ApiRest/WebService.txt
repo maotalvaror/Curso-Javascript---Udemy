@@ -1,0 +1,4 @@
+WebService o Servicio web =
+Viene a ser un tipo de API que opera sobre todo en Htpp...
+aunque necesariamente no siempre va a ser asi, pero en la gran mayoria
+de los casos si ocurre de esa manera.
