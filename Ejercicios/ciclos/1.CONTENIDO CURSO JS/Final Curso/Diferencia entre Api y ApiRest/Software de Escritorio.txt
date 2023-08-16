@@ -1,0 +1,10 @@
+Software de Escritorio =
+  - C#
+  - C++
+  - PYTHON
+  - JAVA
+
+* Consola
+  - Scripts
+
+Más conocidos o que más se suelen enseñar en las universidades.
