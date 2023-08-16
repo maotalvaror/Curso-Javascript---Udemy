@@ -1,0 +1,16 @@
+JAVASCRIPT es un lenguaje debilmente tipado o tambien llamado sin tipado,
+esto significa que permite definir variables sin asignarles un tipo de dato en particular.
+
+EJEMPLO: ( var a; )
+
+JAVASCRIPT CONVERSIÓN IMPLICITA:
+La conversion que ocurre NO es la esperada.
+var a = 5;
+var b = a + '5';
+console.log('Conversion implicita: ',b); // 55
+
+JAVASCRIPT CONVERSIÓN EXPLICITA:
+La conversion que ocurre SI es la esperada.
+var c = a + Number('5');
+console.log('Conversion explicita: ',c); // 10
+
