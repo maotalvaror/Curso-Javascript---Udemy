@@ -1,0 +1,37 @@
+FUNCIONES
+
+main() :
+Contiene dos funciones importantes:
+1.update : actualizar las variables del juego.
+2.draw : dibujar todos los objetos del juego.
+
+update() :
+Contiene el algoritmo principal de nuestro juego, usando 3 funciones mas, dentro de ella se detecta:
+1.checkSnakeCollision():
+Verifica las  siguientes colisiones de la serpiente.
+2.gameOver():
+Puede resetear el estado del juego.
+3.increaseSnakeSize():
+Puede aumentar el tamaño de la serpiente.
+4.randomFoodPosition():
+Puede generar el alimento en caso de que no exista (que se lo haya comido),
+dentro de esta funcion se comparan las coordenadas del alimento generado con el cuerpo de la serpiente usando la funcion ( checkFoodCollision() ).
+
+getRandomX() Y getRandomY :
+generan un valor aleatorio en el eje x y en el eje y.
+
+draw() :
+Define un fondo negro, le da color a la cabeza, cuerpo y al alimento. (Para poder ver en pantalla)
+
+drawObject() :
+Recibe un objeto que contiene las coordenadas y es dibujado con el color que se le indica
+
+document.addEventListener('keydown', moveSnake) :
+En general la pagina escucha el evento keydown (se activa cuando se presiona una tecla.) y llama a la funcion moveSnake
+moveSnake() : 
+Recibe el evento keydown,
+hacemos que la sepriente se mueva hacia arriba, abajo, derecha o izquierda,
+pero siempre se hace una condicion que se asegura que la serpiente no se mueva en ese mismo eje,
+osea que si la serpiente se mueve hacia la derecha no se puede mover otra vez hacia la derecha ni hacia la izquierda,
+su siguiente movimiento tiene que ser hacia arriba o hacia abajo,
+De esta manera se evita que el usuario pierda el juego sin sentido.
