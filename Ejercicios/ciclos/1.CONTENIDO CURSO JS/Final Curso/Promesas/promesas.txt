@@ -1,0 +1,70 @@
+Un objeto promesa representa la finalización (o falla)
+eventual de una operación asincrona y su valor resultante.
+
+Las Promesas son similares a los Eventos, con las siguientes diferencias:
+
+* Una Promesa solo puede tener éxito o fracasar una única vez.
+  No puede tener éxito o fallar por una 2da vez,
+  ni cambiar de éxito a fallo posteriormente, o viceversa.
+
+* Si una promesa ha sido exitosa o ha fallado,
+  y más adelante (recién) registramos un callback (de success o failure),
+  (incluso si el evento tuvo lugar antes).
+
+**OPERACIONES ASINCRONAS**
+Las acciones asincronas se implementaban haciendo solo uso de Callbacks
+(una función al interior de otra).
+
+* Una promesa puede presentar los siguientes estados:
+
+- fulfilled - La acción relacionada a la promesa se llevó a cabo con éxito.
+- rejected - La acción relacionada a la promesa falló.
+- pending - Aún no se ha determinado si la promesa fue fulfilled o rejected.
+- settled - Ya se ha determinado si la promesa fue fulfilled o rejected.
+
+* También se suele usar el término thenable,
+  para indicar que un objeto tiene disponible un método "then"
+  (y que por tanto está relacionado con Promesas).
+
+____________________________________________________________
+
+EXPLICACIÓN DE PROMESAS :
+
+Una promesa se corresponde con un objeto promise,
+Este objeto representa un valor que no se conoce,
+necesariamente al momento de crear una promesa.
+
+Un promesa nos permite realizar acciones,
+tomando como base el valor de éxito,
+que va a ser devuelto o la razon del fallo.
+
+Al momento de escribir el código,
+no tenemos exactamente el valor.
+Pero gracias al valor resultante,
+se representa a través de una promesa,
+podemos decidir cómo actuar ante una respuesta,
+ya sea éxitosa o de fallo.
+
+La idea de usar promesas consiste en,
+no usar métodos asíncronos por si solos,
+con callbacks sino que mas bien un objeto promise,
+por que ese objeto:
+Representa y nos va a proveer del valor resultante
+que se obtenga a futuro.
+
+Para crear una promesa la sintaxis es:
+
+new Promise(function(resolve, reject) {...});
+new Promise((resolve, reject) => {...});
+
+- El constructor de promesas
+- Espera una funcion
+- Va a tener dos argumentos (resolve, reject)
+
+El constructor espera una funcion como parámetro...
+
+new Promise({ Espera 1 función, conocida como "executor" });
+la función "executor" recibe dos argumentos (resolve, reject)
+estos dos argumentos ayudan para cambiar el estado de la promesa,
+en el instante en que se ejecuta esto, la función executor es llamada,
+incluso antes de que se genere el objeto.
