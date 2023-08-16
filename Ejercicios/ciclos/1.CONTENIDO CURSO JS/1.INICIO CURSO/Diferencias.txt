@@ -1,0 +1,14 @@
+Fronted : Interpretados por los navegadores
+
+*HTML: Define la estructura semántica de una pagina (listas, botones, imagenes, enlaces).
+  Es un lenguaje de marcado.
+*CSS: Se usa para aplicar estilos sobre la estructura que html define.
+  Son hojas de estilo.
+*JavaScript: Permite una interacción,
+puede realizar modificaciones en los elementos de una pagina tanto como de html y de css.
+  Lenguaje que se usa para el desarrollo web.
+
+Backend : luego de ejecutarse dan como resultado al navegador archivos estaticos (Fronted)
+
+*PHP
+*Java
