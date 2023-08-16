@@ -1,0 +1,21 @@
+nvm use 18.15.0 = version mas reciente
+
+Para usar modulos, y clases en el archivo del juego de la snake y que al final sea minificado y se pueda subir a un servidor en linea
+
+
+Siempre empezar por:
+
+npm init 
+Para poder empezar a instalar los paquetes que necesitamos
+Se instalara un archivo package.json
+
+
+Dependencias de desarrollo = npm install --save-dev
+
+webpack = Va a hacer uso de babel
+babel-core = Nucleo de babel
+babel-loader = Funcionar en conjunto con webpack
+babel-preset-env = Transforma codigo moderno a una sintaxis que sea comprendida por todos los navegadores
+webpack-dev-server = nos permite levantar un servidor que se mantenga observando cambios sobre nuestros archivos javascript y que genere en todo momento una version compilada por cada cambio que se realice 
+
+npm install --save-dev webpack babel-core babel-loader babel-preset-env webpack-dev-server webpack-cli
