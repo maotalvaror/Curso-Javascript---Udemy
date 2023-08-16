@@ -1,0 +1,77 @@
+¿QUÉ SON LAS PROMESAS?:
+Lo primero que tenemos que tener en cuenta es:
+-JavaScript es Single Threaded lo que significa que:
+  JavaScript solo puede ejecutar una unica acción a la vez, 
+  por que solamente contamos con un hilo de ejecución.
+  
+  Si una tarea demora bastante tiempo en ejecutarse,
+  no deberiamos esperar a que se resuelva,
+  para continuar con la tarea que sigue,
+  ya que de esa manera el programa quedaria congelado,
+  para solucionar este problema se utilizan los Eventos y los Callbacks
+
+
+UNA MANERA DE SOLUCIONARLO SERIA: (SIRVE PARA UNA UNICA IMAGEN)
+
+
+  const myImage = document.querySelector('#example);
+  
+  myImage.addEventListener('load', function(){
+    // bien! la imagen cargó correctamente
+  });
+
+  myImage.addEventListener('error', function(){
+    // sucedió algún inconveniente
+  })
+
+
+LA SEGUNDA MANERA DE SOLUCIONARLO SERIA:
+
+
+  var myImage = document.querySelector('example');
+
+  function loaded(){
+    // bien, la imagen cargó
+  }
+
+  if (myImage.complete){
+    loaded();
+  } else {
+    myImage.addEventListener('load', loaded);
+  }
+
+
+  myImage.addEventListener('error', function(){
+    // ocurrió un imprevisto
+  })
+
+LOS EVENTOS NO SIEMPRE SON LA MEJOR OPCIÓN:
+Los eventos deben usarse principalmente 
+para detectar acciones
+que se repiten múltiples veces sobre un mismo objeto,
+Como por ejemplo:
+( keyup, keydown )
+que permiten detectar cuando una tecla se a presionado y actuar ante ello.
+( touchstart, mouseover )
+que permiten detectar movimiento del mouse, cuando se hace click y se arrastra, etc
+
+
+EN EL CASO DE LAS ACCIONES ASÍNCRONAS:
+Pueden tener exito o falla, en este caso no nos interesa los eventos,
+nos interesa ser notificados cuando dicha acción asíncrona a finalizado.
+
+EJEMPLO:
+
+
+myImage.ejecutarEstoSiYaCargoOCuandoCargue(function(){
+  // la imagen cargó
+}).oSiFallaEjecutarEstoOtro(function(){
+  //falló la carga
+});
+
+// y así mismo...
+cuandoTodasHayanCargado([myImage1, myImage2]).ejecutarEsto(function(){
+  // todas las imágenes han cargado
+}).oSiAlgoFalloEjecutarEsto(function(){
+  // falló la carga de una imagen, en algún punto
+});
