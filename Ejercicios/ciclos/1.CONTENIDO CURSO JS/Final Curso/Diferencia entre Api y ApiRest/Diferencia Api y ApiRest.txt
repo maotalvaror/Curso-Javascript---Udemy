@@ -1,0 +1,11 @@
+API =
+Hace referencia a toda una interfaz de programación,
+es decir que es el medio por el cual nosotros podemos escribir codigo,
+que de alguna manera se relacione con codigo escrito en otras aplicaciones,
+esas aplicaciones ponen a nuestra disposición un conjunto de funciones,
+que nos van a permitir interactuar con dichas funciones de una manera sencilla y resumida.
+
+API REST =
+Básicamente es un conjunto de normas que se siguen para que exista un estándar,
+una convención de cómo usar correctamente y de manera universal y uniforme las peticiones Http
+hacia un servicio web, para que de esta manera exista uniformidad entre las APIs.
