@@ -1,0 +1,12 @@
+La carpeta node_modules: 
+No es indispensable por que se puede instalar a partir de lo que indica el archivo package.json.
+
+La carpeta dist: 
+No es indispensable por que se genera a partir del codigo fuente (dentro de la carpeta src).
+
+La carpeta node_modules: 
+No es indispensable por que se puede instalar a partir de lo que indica el archivo package.json.
+
+El archivo server.js: 
+No es indispensable por que se instala un servidor propio, que se encargara de detectar cambios,
+sobre los archivos javascript para ejecutar webpack y finalmente recargar el navegador.
