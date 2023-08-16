@@ -1,0 +1,41 @@
+Hay dos formas de exportar
+
+1. Default exports: Exportaciones por defecto
+Se recomienda cuando solo se exporta un unico valor o simbolo por módulo,
+como por ejemplo una unica clase, una unica función, una unica variable, etc.
+
+2. Named exports: Exportaciones por nombre
+Se recomienda para multiples exportaciones por módulo,
+como por ejemplo dos funciones, una variable y una clase, etc.
+
+SE PUEDEN COMBINAR PERO NO SE RECOMIENDA.
+
+
+Named exports:
+Para importar dos, o la cantidad de modulos que desea es:
+import {mod1, mod2} from 'Archivo.js';
+
+Para importar todo, es:
+import * as myModule from 'Archivo.js';
+console.log(myModule.saludar('Maria'));
+console.log(myModule.despedir('Maria'));
+console.log(myModule.x);
+
+Para importar con un alias, es:
+
+RENAME NAMED IMPORTS
+import {saludar as saludo, despedir} from 'Archivo.js';
+console.log(saludo('Maria'));
+console.log(despedir('Maria'));
+
+Fallback:
+Fallback es una funcionalidad que se usa por defecto cuando otra no está disponible.
+
+EJEMPLO:
+  <script src="principal.js" type="module"></script>  <!-- Para navegadores modernos -->
+  <script src="navegadores-antiguos.js" nomodule></script> <!-- Para navegadores antiguos-->
+
+Para no tener que preocuparse por el tema de compatibilidad con navegadores
+y para no estar pendiente de dos servidores la forma más simple seria:
+EJEMPLO:
+  <script src="principal.js"></script>  <!-- Para navegadores modernos como tambien para antiguos -->
