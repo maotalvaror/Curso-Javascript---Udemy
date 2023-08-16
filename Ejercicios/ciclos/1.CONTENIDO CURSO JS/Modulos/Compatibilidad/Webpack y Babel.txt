@@ -1,0 +1,49 @@
+¿Qué es Webpack? = Empaquetador de modulos, asi mismo un analizador de dependencias.
+Es una herramienta,
+que nos permite analizar todo un conjunto de dependencias que nuestro proyecto tiene.
+Aplicar operaciones sobre este conjunto de dependencias, realizar una empaquetación y 
+finalmente obtener archivos estaticos.
+
+<!-- 
+npm init:
+basicamente va a crear por nosotros un archivo llamado package.json
+package.json <-- en este archivo se va a indicar que paquetes de npm usa nuestro proyecto
+
+¿Por qué es importante?:
+Por que cuando nosotros vayamos a configurar la "aplicacion" 
+en otro servidor de producción u otro desarrollador vaya a configurar el proyecto en su computadora,
+basandose en el archivo package.json se sabra que dependencias tiene el proyecto.
+-->
+
+entry point:
+Es un archivo que va a ser el principal punto de entrada.
+
+<!--
+npqi : nombre del paquete a instalar
+
+Instalar Webpack
+
+npm + install + npqi
+
+npm install Webpack
+Webpack es una herramienta que vamos a usar mientras desarrollamos
+Una vez que nuestro proyecto este listo para ser publicado, 
+no necesitamos que esta dependencia de web se descargue en dicho servidor de producción.
+
+
+¿Qué es un flag?:
+npm install webpack --save-dev  :
+va a indicar que se trata de una dependencia de desarrollo
+y no es necesario que se decargue este paquete en producción.
+-->
+
+<!--
+
+babel-loader: Es el cargador de babel para webpack
+babel-core: El nucleo de babel que contiene más información acerca del compilador
+
+npm + install + flag + babel-loader + babel-core
+npm install --save-dev babel-loader babel-core
+
+Instalar Babel
+-->
