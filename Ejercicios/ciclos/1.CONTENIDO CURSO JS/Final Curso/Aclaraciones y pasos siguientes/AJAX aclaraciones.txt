@@ -1,0 +1,28 @@
+cuando un usuario se conecta a una página,
+  lo que se carga primero es el HTML
+  despues se cargan sus estilos y tambien algunas animaciones que podrian existir hechas en CSS
+  y algunos eventos hechos en javascript.
+
+De la misma forma existen tecnologias que nos permiten comunicarnos con las bases de datos.
+PHP     ->     Bases de datos.
+Bases de datos que es donde se encuentra guardada la información de nuestra página.
+
+
+AJAX: es una tecnologia que consiste en hacer peticiones al servidor en segundo plano,
+permite que un usuario navegé sobre una página.
+
+Podemos instalar axios a través de ( npm ) o ( bower )
+
+¿Qué es BOWER?:
+BOWER es un gestor de paquetes al igual que npm,
+la diferencia es que:
+cuando se crea con npm surge con la intención de ser un repositorio para paquetes de node.
+
+node no solamente contiene paquetes que pueden ser usados en el lado del servidor,
+sino que ahora contiene paquetes y herramientas que se pueden usar para el desarrollo ((frone)).
+
+en el caso de bower esta orientado especificamente para trabajar con paquetes (( fronen )),
+y no con paquetes que son aprovechados por node.
+
+API: podria decirse de forma simple que es un conjunto de direcciones url,
+a las cuales se le pueden hacer peticiones y estas nos van a responder con un formato determinado.
