@@ -1,0 +1,18 @@
+Lo primero que se debe hacer es acceder a la carpeta donde se trabajara (( snake-modules )),
+
+segundo usar node en la version mas reciente (( nvm use 18.15.0 )),
+
+tercero es usar (( npm init )) para empezar a instalar los paquetes que se necesitan,
+' npm init genera un archivo package.json '
+
+cuarto usar el comando (( npm install --save-dev  (PAQUETES) ))
+' Se usa --save-dev por que son dependencias de desarrollo '
+' seguidamente se ponen los paquetes que se necesitan '
+
+Los paquetes son:
+1. webpack ( y webpack hace uso de babel )
+2. babel-core ( el nucleo de babel)
+3. babel-loader ( para que funcione en conjunto con webpack )
+4. babel-preset-env ( transforma codigo moderno en una sintaxis que puedan entender los navegadores )
+5. webpack-dev-server ()
+6. webpack-cli ()
