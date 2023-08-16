@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJERCICIOS JAVASCRIPT</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+  <section id="game-zone">
+    <figure>
+      <img id="PlayerChoice" src="images/rock.png" alt="Eleccion del jugador">
+      <figcaption>Jugador</figcaption>
+    </figure>
+    
+    <figure>
+      <img id="ComputerChoice" src="images/rock.png" alt="Eleccion del computador">
+      <figcaption>Computadora</figcaption>
+    </figure>
+  </section>
+
+  <p id="result">Tú empatas escogiendo <strong>piedra</strong> en contra de <strong>piedra</strong></p>
+  <p id="score">
+    Haz ganado <strong>0</strong> veces.
+    Haz perdido <strong>0</strong> veces.</p>
+
+  <section>
+    <p>Escoge una opción </p>
+    <button data-choice="Piedra">
+      <img src="images/rock.png" alt="Jugar usando piedra">
+    </button>
+    <button data-choice="Papel">
+      <img src="images/paper.png" alt="Jugar usando papel">
+    </button>
+    <button data-choice="Tijera">
+      <img src="images/scissors.png" alt="Jugar usando tijeras">
+    </button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
