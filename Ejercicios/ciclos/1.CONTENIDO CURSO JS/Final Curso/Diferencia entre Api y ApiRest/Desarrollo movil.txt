@@ -1,0 +1,13 @@
+Desarrollo movil =
+* ANDROID
+  - Java
+  - Kotlin
+  - (?) -> Otros lenguajes
+
+* IOS
+  - Swift
+  - C#
+
+* Apps Híbridas
+  - Ionic
+  - ReactNative
