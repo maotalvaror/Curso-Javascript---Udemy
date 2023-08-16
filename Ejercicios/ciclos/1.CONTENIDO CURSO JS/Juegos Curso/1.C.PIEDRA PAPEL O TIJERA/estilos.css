@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Open sans', sans-serif;
+}
+
+#game-zone {
+  background: rgb(117, 78, 117);
+  display: flex;
+  color: white;
+  border-radius: 1em;
+}
+
+#game-zone figure{
+  flex: 1;
+}
+
+#result {
+  background: rgb(177, 142, 177);
+  border-radius: 1em;
+}
+
+#score {
+  background: rgb(206, 127, 206);
+  border-radius: 1em;
+}
