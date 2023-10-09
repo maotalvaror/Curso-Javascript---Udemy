@@ -75,3 +75,170 @@ cuandoTodasHayanCargado([myImage1, myImage2]).ejecutarEsto(function(){
 }).oSiAlgoFalloEjecutarEsto(function(){
   // falló la carga de una imagen, en algún punto
 });
+
+
+// Una terminologia más breve y facil de usar seria:
+
+//devuelve una promesa (objeto Promise)
+myImage.ready()
+
+myImage.ready().then(function() {
+  // cargó
+}, function() {
+  // falló
+});
+
+// y así mismo...
+Promise.all([myImage1.ready(), myImage2.ready()]).then(function(){
+  // cargaron todas
+}, function() {
+  // ocurrió un fallo
+})
+
+
+
+la primera funcion nos ayuda a saber si la imagen cargo correctamente.
+la segunda funcion nos ayuda a saber si la imagen no cargo.
+
+myImage.ready().then(function() {
+  // cargó
+}, function() {
+  // falló
+});
+
+
+Para saber si todas las imagenes cargaron o no:
+
+Promise.all([myImage1.ready(), myImage2.ready()]).then(function(){
+  // cargaron todas
+}, function() {
+  // ocurrió un fallo
+})
+
+
+
+DIFERENCIAS ENTRE PROMESAS Y EVENTOS:
+
+Una promesa solo puede tener éxito o fracasar una unica vez.
+No puede tener éxito o fallar por una segunda vez.
+Ni cambiar de éxito a fallo posteriormente, o  viceversa.
+
+Si una promesa ha sido exitosa o ha fallado,
+y más adelante (recién) registramos un Callback (de success o failure),
+la funcion de Callback correspondiente será llamada
+(incluso si el evento tuvo lugar antes).
+
+
+Una promesa puede presentar los siguientes estados:
+
+fulfilled - La acción relacionada a la promesa se llevó a cabo con éxito.
+rejected - La acción relacionada a la promesa falló.
+pending - Aún no se ha determinado si la promesa fue fulfilled o rejected.
+settled - Ya se ha determinado si la promesa fue fulfilled o rejected.
+
+También se suele usar el término thenable,
+para indicar que un objeto tiene disponible un método "then"
+(y que por tanto está relacionado con Promesas).
+
+
+PROMESAS EN CADENA: 
+Para ejecutar multiples operaciones asincronas donde una depende de otra,
+a veces necesitamos esperar que una operacion asincrona finalice,
+para que dependiendo del resultado podamos iniciar otra.
+
+
+TRADICIONALMENTE, LAS ACCIONES ASINCRONAS, 
+SE IMPLEMENTABAN HACIENDO SÓLO USO DE CALLBACKS
+(UNA FUNCIÓN AL INTERIOR DE OTRA).
+
+ANTERIOR MENTE LA SINTAXIS ERA DE ESTA MANERA.
+
+hacerAlgo(function(resultado) {
+  hacerAlgoMas(resultado, function(nuevoResultado) {
+    hacerUnaTerceraCosa(nuevoResultado, function(resultadoFinal) {
+      console.log('Resultado final: ' + resultadoFinal);
+    }, failureCallback);
+  }, failureCallback);
+}, failureCallback);
+
+
+UN EJEMPLO MÁS ESPECIFICO:
+Tenemos una aplicación web que consulta una API para obtener información. 
+Cada llamado a la API implica un tiempo de espera.
+
+Para evitar que esto afecte a toda nuestra aplicación,
+es importante que estas operaciones ocurran de forma asincrona.
+
+Queremos mostrar la lista de artículos más populares,
+de las categorías preferidas por el usuario que ha iniciado sesión,
+(o los artículos más vistos en general si el usuario no ha seleccionado categorías).
+
+Pero, primero queremos saber si el usuario ha confirmado su correo, porque sino,
+primero le vamos a sugerir hacer ello.
+
+
+verificarSiYaConfirmoSuCorreo(function(correoConfirmado) {
+  if (correoConfirmado){
+    obtenerCategoriasPreferidas(userId, function(categoriasPreferidas) {
+      if (categoriasPreferidas.length > 0)
+      obtenerArticulosPopularesEn(categoriasPreferidas, function(listaArticulos) {
+        console.log('Artículos de las categorías preferidas: ' + listaArticulos);
+      }, failureCallback);
+      else obtenerArticulosPopulares(function(listaArticulos){
+        console.log('Artículos más vistos en general: ' + listaArticulos);
+      }, failureCallback);
+    }, failureCallback);
+  } else {
+    console.log('Primero por favor confirma tu correo');
+  }
+}, failureCallback);
+
+
+
+DE OTRA MANERA:
+
+verificarSiYaConfirmoSuCorreo()
+.then(function(correoConfirmado){
+  if(correoConfirmado)
+    return obtenerCategoriasPreferidas(userId);
+  else
+    throw new Error('Primero por favor confirma tu correo');
+})
+.then(function(categoriasPreferidas){
+  if(categoriasPreferidas.length > 0)
+    return obtenerArticulosPopularesEn(categoriasPreferidas);
+  else
+    return obtenerArticulosPopulares();
+})
+.then(function(listaArticulos)){
+  console.log('Artículos a mostrar: ' + listaArticulos);
+})
+.catch(failureCallback);
+
+funciones con flecha:
+
+verificarSiYaConfirmoSuCorreo()
+.then(correoConfirmado => {
+  if(correoConfirmado)
+    return obtenerCategoriasPreferidas(userId);
+  else
+    throw new Error('Primero por favor confirma tu correo');
+})
+.then(categoriasPreferidas => {
+  if (categoriasPreferidas.length => 0)
+    return obtenerArticulosPopularesEn(categoriasPreferidas);
+  else
+    return obtenerArticulosPopulares();
+})
+.then(listaArticulos => console.log('Artículos a mostrar: ' + listaArticulos))
+.catch(failureCallback);
+
+
+EN CONCLUSIÓN LAS PROMESAS EN JAVASCRIPT SON:
+
+Prometen que algo esta por resolverse,
+y nosotros no conoceremos si eso se llevó a cabo con éxito o no.
+En breve de forma más tecnica un objeto promesa representa la
+finalización o falla eventual de una operación asincrona
+y su valor resultante en los ejemplos anteriores ya hemos visto 
+cómo podemos usar promesas.
