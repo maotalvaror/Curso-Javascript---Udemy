@@ -1,0 +1,52 @@
+async, await;
+
+await = 
+Es una palabra reservada,
+que espera que la expresión que este al lado derecho termine,
+la unica condición para usar await,
+es que se encuentre dentro de una función catalogada como async.
+Es una forma de usar promesas,
+con el beneficio de que la función va a esperar a que termine
+y luego va a continuar su camino de manera secuencial.
+
+Ejemplo:
+const imprimirEn1Seg = (valor) => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log(valor);
+      resolve(valor);
+    }, 1000)
+  });
+};
+
+//Primera forma pero no tomara los valores
+
+async function contar() {
+  await imprimirEn1Seg(1);
+  await imprimirEn1Seg(2);
+  await imprimirEn1Seg(3);
+}
+contar();
+
+//Segunda forma
+
+async function contar() {
+  const x = await imprimirEn1Seg(1);
+  const y = await imprimirEn1Seg(2);
+  const z = await imprimirEn1Seg(3);
+  console.log(`Total: ${x+y+z}`);
+}
+contar();
+
+//Haciendo uso de bucles
+//"Usar await nos permite hacer uso de codigo asincrono como si de asincrono se tratase"
+
+
+async function contarBucle() {
+  let S = 0;
+  for (let i=1; i <= 3; i++){
+    S += await imprimirEn1Seg(i);
+  }
+  console.log(`Suma: ${S}`);
+}
+contarBucle();
