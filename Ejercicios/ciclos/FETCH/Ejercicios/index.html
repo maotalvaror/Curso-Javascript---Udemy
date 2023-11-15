@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <script src="crear lista.js"></script>
+  <!--
+
+    <div class="shadow p-3 bg-body rounded d-none" id="div-Principal">
+    <ul class="list-group d-inline-block">
+      <li class="list-group-item d-flex justify-content-between align-items-center">Instagram
+        <i class="fa-brands fa-instagram ms-3 fs-3"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">Facebook
+        <i class="fa-brands fa-facebook ms-3 fs-3"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">Messenger
+        <i class="fa-brands fa-whatsapp ms-3 fs-3"></i>
+      </li>
+    </ul>
+  </div>
+
+  -->
+
+  <!--
+
+    <script>
+
+    function MostrarElementoPrincipal(){
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        var elemento = document.getElementById('div-Principal');
+
+        elemento.classList.remove('d-none');
+        elemento.classList.add('show-animated');
+
+        var width_div = elemento.offsetWidth;
+        var height_div = elemento.offsetHeight;
+        
+        var coordenada_x = e.clientX;
+        var coordenada_y = e.clientY;
+
+        console.log(`(x,y) = (${coordenada_x}, ${coordenada_y})`);
+
+        var limite_top = 0;
+        var limite_left = 0;
+        var limite_right = document.documentElement.clientWidth - width_div;
+        var limite_bottom = document.documentElement.clientHeight - height_div;
+        
+        if ((coordenada_x > limite_right))
+          coordenada_x -= width_div;
+
+        if (coordenada_y > limite_bottom)
+          coordenada_y -= height_div
+        
+        elemento.style.position = "absolute";
+        elemento.style.left = coordenada_x +'px';
+        elemento.style.top = coordenada_y +'px'; 
+      })
+    }
+    MostrarElementoPrincipal();
+
+    function ocultarElementoPrincipal(e) {
+      var elemento = document.getElementById('div-Principal');
+      elemento.classList.remove('show-animated');
+      elemento.classList.add('d-none');
+    }
+
+    function ejecutarEvento(){
+        var lista = document
+          .querySelectorAll('#div-Principal li')
+          .forEach( el => { 
+             el.onclick = ocultarElementoPrincipal;
+            })
+    }
+    ejecutarEvento();
+
+  </script>
+
+  -->
+</body>
+</html>
