@@ -1,0 +1,40 @@
+El HTML: Permite que los eventos activen acciones en el navegador, como iniciar un Javascript
+  cuando un usuario hace click en un elemento.
+
+EVENTOS DE FORMULARIO:
+  Eventos desencadenados por acciones dentro de un formulario HTML:
+
+  1. onblur: Se activa en el momento que el usuario abandone el elemento
+  2. onchange: Se activa cuando un usuario cambia la opcion seleccionada de un elemento;
+  3.
+  4.
+  5.
+  6.
+  7.
+
+EVENTOS DE TECLADO:
+  1. onkeydown: Se activa cuando un usuario está "presionando" una tecla;
+  2. onkeypress: Se activa cuando un usuario "presiona" una tecla;
+  3. onkeyup: Se activa cuando un usuario libera una clave;
+
+EVENTOS DE MOUSE:
+  1. onclick: Se activa al hacer clic en el elemento;
+  2. ondblclick: Se activa al hacer doble clic en el elemento;
+  3. onmousedown: Se activa cuando se presiona un botón del mouse sobre un elemento;
+  4. onmousemove: Se activa cuando el mouse se mueve mientras está sobre un elemento;
+  5. onmouseout: Se activa cuando el mouse se mueve fuera de un elemento;
+  6. onmouseover: Se activa cuando el mouse se mueve sobre un elemento;
+  7. onmouseup: Se activa cuando se suelta un botón del ratón sobre un elemento;
+  8. onwheel: Se dispara cuando la rueda del ratón rueda hacia arriba o hacia abajo sobre un elemento;
+
+EVENTOS DE ARRASTRE:
+
+
+EVENTOS DE PORTAPAPELES:
+
+
+EVENTOS DE MEDIOS:
+
+
+EVENTOS MISCELÁNEOS:
+  ontoggle:
